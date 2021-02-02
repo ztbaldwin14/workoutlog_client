@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Sitebar from '../home/Navbar';
 import Signup from './Signup';
 import Login from './Login';
 
