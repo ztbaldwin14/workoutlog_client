@@ -39,9 +39,10 @@ const WorkoutCreate = (props) => {
         <FormGroup>
           <Label htmlFor="description" />
           <Input
-            name="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
+            name="result"
+            placeholder="Result"
+            value={result}
+            onChange={(e) => setResult(e.target.value)}
           />
         </FormGroup>
         <FormGroup>
@@ -60,9 +61,10 @@ const WorkoutCreate = (props) => {
         <FormGroup>
           <Label htmlFor="result" />
           <Input
-            name="result"
-            value={result}
-            onChange={(e) => setResult(e.target.value)}
+            name="description"
+            placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </FormGroup>
         <Button type="submit">Click to Submit</Button>
