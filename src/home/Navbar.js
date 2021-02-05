@@ -16,7 +16,6 @@ const Sitebar = (props) => {
         let newIsOpen = !isOpen;
         setIsOpen(newIsOpen);
     }
-
     return (
         <Navbar color="faded" light expand="md">
             <NavbarBrand href="/">Workout Log</NavbarBrand>
@@ -24,7 +23,7 @@ const Sitebar = (props) => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <Button onClick={props.clickLogout}>Logout</Button>
+                        <Button onClick={props.clearToken}>Logout</Button>
                     </NavItem>
                 </Nav>
             </Collapse>

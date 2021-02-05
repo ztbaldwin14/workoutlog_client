@@ -7,11 +7,11 @@ const Login = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3000/user/login', {
+        fetch('http://localhost:3000/user/login/', {
             method: 'POST',
-            body: JSON.stringify({ user: { username: username, password: password } }),
+            body: JSON.stringify({ user: { username: username, passwordhash: password } }),
             headers: new Headers({
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             })
         }).then(
             (response) => response.json()
@@ -30,7 +30,7 @@ const Login = (props) => {
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="password">Password</Label>
-                    <Input onChange={(e) => setPassword(e.target.value)} name="password" value={password} />
+                    <Input onChange={(e) => setPassword(e.target.value)} name="password" type="password"value={password} />
                 </FormGroup>
                 <Button type="submit">Login</Button>
             </Form>

@@ -30,7 +30,7 @@ const Signup = (props) => {
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="password">Password</Label>
-                    <Input onChange={(e) => setPasswordhash(e.target.value)} name="password" value={passwordhash} />
+                    <Input onChange={(e) => setPasswordhash(e.target.value)} name="password" value={passwordhash} type="password"/>
                 </FormGroup>
                 <Button type="submit">Signup</Button>
             </Form>
